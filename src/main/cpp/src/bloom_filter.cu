@@ -72,7 +72,7 @@ __global__ void gpu_bloom_filter_put(cudf::bitmask_type* const bloom_filter,
   }
 
   // https://github.com/apache/spark/blob/7bfbeb62cb1dc58d81243d22888faa688bad8064/common/sketch/src/main/java/org/apache/spark/util/sketch/BloomFilterImpl.java#L87
-  auto const el            = input.element<int64_t>(tid);
+  auto const el = input.element<int64_t>(tid);
   bloom_hash_type const h1 = MurmurHash3_32<int64_t>(0)(el);
   bloom_hash_type const h2 = MurmurHash3_32<int64_t>(h1)(el);
 
