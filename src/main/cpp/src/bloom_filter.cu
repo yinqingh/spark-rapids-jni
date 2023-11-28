@@ -27,7 +27,7 @@
 #include <cudf/null_mask.hpp>
 #include <cudf/scalar/scalar.hpp>
 #include <cudf/utilities/bit.hpp>
-#include <cudf/utilities/span.hpp>
+#include  <cudf/utilities/span.hpp>
 
 #include <rmm/cuda_stream_view.hpp>
 #include <rmm/exec_policy.hpp>
