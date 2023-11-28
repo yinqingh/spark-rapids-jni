@@ -25,8 +25,11 @@
 #include <cudf/lists/lists_column_device_view.cuh>
 #include <cudf/lists/lists_column_view.hpp>
 #include <cudf/null_mask.hpp>
+
 #include <cudf/scalar/scalar.hpp>
+
 #include <cudf/utilities/bit.hpp>
+
 #include <cudf/utilities/span.hpp>
 
 #include <rmm/cuda_stream_view.hpp>
