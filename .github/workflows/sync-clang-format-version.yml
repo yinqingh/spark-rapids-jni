@@ -20,7 +20,7 @@ on:
     types:
       - closed
     branches:
-      - main
+      - yinqing/main
     paths:
       - 'thirdparty/cudf'
 
